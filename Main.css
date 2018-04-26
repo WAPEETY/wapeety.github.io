@@ -1,0 +1,81 @@
+body, html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+@font-face {
+   font-family: 'AstronBoyWonder';
+   src: url('/Font/astronboywonder.eot') format('embedded-opentype'),
+   url('Font/AstronBoyWonder.ttf') format('opentype');
+ }
+
+   @font-face {
+      font-family: 'Warlord';
+      src: url('/Font/Warlord.eot') format('embedded-opentype'),
+      url('Font/Warlord.ttf') format('opentype');
+
+   }
+
+.main{
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.center{
+   display:flex;
+   flex-direction: column;
+   width: 60%;
+}
+
+.box1{
+   width: 100%;
+   height: auto;
+   text-align: center;
+   color: white;
+   font-family: AstronBoyWonder, Verdana, serif;
+}
+
+.box2{
+  display: flex;
+  flex direction: row;
+   width: 100%;
+   height: auto;
+   text-align: center;
+   color: white;
+   font-family: AstronBoyWonder, Verdana, serif;
+}
+
+.left{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  text-align: center;
+  color: black;
+  width: 20%;
+  height: auto;
+  background-color: white;
+  font-family: AstronBoyWonder, Verdana, serif;
+}
+
+.right{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  text-align: center;
+  color: black;
+  width: 20%;
+  height: auto;
+  background-color: white;
+  font-family: AstronBoyWonder, Verdana, serif;
+}
+
+#centerimage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
