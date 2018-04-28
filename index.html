@@ -1,62 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <title>WAPEETY</title>
-  <link rel="stylesheet" href="Main.css"/>
-</head>
-<body bgcolor="black">
-  <div class=main>
-    <div class=left>
-      <div id=centerimage>
-       <img src="Images/Wapeety_Logo_Site.jpg" width="60%" height="60%">
-      </div>
-         <p>
-         <font size="6"><br><br><br>Follow me on</font>
-         </p>
-         <div id=centerimage>
-          <img src="Images/YT_logo.png" onclick="location.href = 'https://www.youtube.com/channel/UCqdQlIXXgnsIt-PEkQkW2Dg'" width="15%" height="5%">
-         </div>
-          <font size="5">Youtube</font>
-          <p>
-         <div id=centerimage>
-           <img src="Images/IG_logo.png" onclick="location.href = 'https://www.instagram.com/wapeety/'" width="15%" height="5%">
-         </div>
-           <font size="5" onclick="location.href = 'https://www.instagram.com/wapeety/'">Instagram</font>
-          </p>
-         <div id=centerimage>
-            <img src="Images/TG_logo.png" onclick="location.href = 'https://t.me/wapeetyofficial'" width="15%" height="5%">
-         </div>
-            <font size="5" onclick="location.href = 'https://t.me/wapeetyofficial'">Telegram</font>
-    </div>
-    <div class=center>
-      <div class=box1>
-         <font size="10">WELCOME<br/><br/> TO<br/><br/> WAPEETY<br/><br/></font>
-         <font size="10">My relases<br/><br/></font>
-      </div>
-      <div class=box2>
-         <iframe width="288" height="165" src="https://www.youtube.com/embed/FIOFd0bLlcY?showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-         <iframe width="288" height="165" src="https://www.youtube.com/embed/2SEK3hb6zGM?showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-         <iframe width="288" height="165" src="https://www.youtube.com/embed/ATlf9ARUhpI?showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-         <iframe width="288" height="165" src="https://www.youtube.com/embed/HHiVU3nzUGc?showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-      </div>
-      <div class=box2>
-         <iframe width="288" height="165" src="https://www.youtube.com/embed/Ww0gV5_1_20?showinfo=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class=right>
-      <div id=centerimage>
-       <img src="Images/Wapeety_Logo_Site.jpg" width="60%" height="60%">
-      </div>
-      <p>
-      <font size="6"><br><br><br>Beta opened site</font>
-      </p>
-      <div id=centerimage>
-       <img src="Images/Danger_sign.png" width="15%" height="5%">
-      </div>
-      <p>
-      <font size="6"><br>We're programming the mobile version of the site</font>
-      </p>
-    </div>
-  </div>
-  </body>
+	<head>
+		<script src="main.js"></script>
+	<script>
+			if (window.mobilecheck() === true) {
+				console.log("[+] Mobile Agent");
+				location.href = "./workInProgressMobile.html";
+			} else {
+				console.log("[+] Desktop Agent");
+				location.href = "./Main.html";
+			}
+	</script>
+		<title>Reindirizzamento...</title>
+	</head>
+	<body>
+	</body>
 </html>
+
