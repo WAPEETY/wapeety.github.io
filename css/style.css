@@ -5,3 +5,17 @@
 nav{
   position: relative;
 }
+
+.spazio{
+  padding: 0 3%;
+  font-family: comfortaa;
+}
+
+h3{
+  font-family: comfortaa;
+    text-decoration: none;
+}
+
+html{
+  text-decoration: none;
+}
