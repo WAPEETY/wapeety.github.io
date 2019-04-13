@@ -13,9 +13,14 @@ nav{
 
 h3{
   font-family: comfortaa;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 html{
+  text-decoration: none;
+}
+
+.testo-card{
+  font-family: comfortaa;
   text-decoration: none;
 }
