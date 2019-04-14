@@ -44,6 +44,10 @@
   top: 20vh;
 }
 
+footer{
+  position: relative;
+  top: 20vh;
+}
 
 @media screen and (max-width: 993px){
   .nero{
