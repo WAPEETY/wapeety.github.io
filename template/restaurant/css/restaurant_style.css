@@ -1,0 +1,82 @@
+.Comfortaa{
+  font-family: comfortaa;
+}
+.spazio{
+    padding: 0 3%;
+}
+
+.slider{
+  position: relative;
+  z-index: -1;
+}
+
+#menu{
+  position: relative;
+  top: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 70px
+}
+
+.parallax-container{
+  position: relative;
+  top: 110vh;
+  height: 400px;
+}
+
+#where{
+  position: relative;
+  top: 120vh;
+}
+
+#hours{
+  position: relative;
+  top: 10vh;
+}
+
+.cont2{
+  position: relative;
+  top: 10vh;
+}
+
+#about{
+  position: relative;
+  top: 20vh;
+}
+
+footer{
+  position: relative;
+  top: 20vh;
+}
+
+@media screen and (max-width: 993px){
+  .nero{
+    background-color: #000000 !important;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .ombra {
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+  }
+
+  .ombra:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .mappa_small{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px){
+  .mappa_big{
+    display: none;
+  }
+}

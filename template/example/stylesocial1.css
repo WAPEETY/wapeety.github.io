@@ -1,0 +1,80 @@
+.social{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.ul_social{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.ul_social .li_social{
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 30px;
+  transform: rotate(-30deg) skew(25deg);
+  background: #ccc;
+}
+
+.ul_social .li_social .span_social{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.8s;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px !important;
+}
+
+.ul_social .li_social:hover .span{
+  box-shadow: -1px 1px 1px rgba(0,0,0,.1)
+}
+
+.ul_social .li_social:hover .span_social:nth-child(5){
+  transform: translate(40px, -40px);
+  opacity: .8;
+}
+
+.ul_social .li_social:hover .span_social:nth-child(4){
+  transform: translate(30px, -30px);
+  opacity: .6;
+}
+
+.ul_social .li_social:hover .span_social:nth-child(3){
+  transform: translate(20px, -20px);
+  opacity: .4;
+}
+
+.ul_social .li_social:hover .span_social:nth-child(2){
+  transform: translate(10px, -10px);
+  opacity: .2;
+}
+
+.ul_social .li_social:nth-child(1) .span_social{
+  background: #3b5999;
+}
+
+.ul_social .li_social:nth-child(2) .span_social{
+  background: #55acee;
+}
+
+.ul_social .li_social:nth-child(3) .span_social{
+  background: #0077B5;
+}
+
+.ul_social .li_social:nth-child(4) .span_social{
+  background: #e4405f;
+}

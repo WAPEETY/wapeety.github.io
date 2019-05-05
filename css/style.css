@@ -42,3 +42,12 @@ html{
 .parallax-container {
       height: 34%;
     }
+
+.row.fix{
+    padding: 13% 3% 0% 3%;
+}
+.row.ann{
+  position: relative;
+  top: 0vh;
+  padding: 0% 3%;
+}
