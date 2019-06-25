@@ -18,7 +18,11 @@
   position: absolute;
   top: 60%;
   margin-left: 10%;
-  padding: 2%
+  padding: 2%;
+  -webkit-box-shadow: 5px 5px 10px 0px #000000;
+-moz-box-shadow: 5px 5px 10px 0px #000000;
+-o-box-shadow: 5px 5px 10px 0px #000000;
+box-shadow: 5px 5px 10px 0px #000000;
 }
 
 .menu_middle{
@@ -31,6 +35,10 @@
   top: 74%;
   left: 70%;
   transform: translate(-0%, -50%);
+  -webkit-box-shadow: 5px 5px 10px 0px #000000;
+-moz-box-shadow: 5px 5px 10px 0px #000000;
+-o-box-shadow: 5px 5px 10px 0px #000000;
+box-shadow: 5px 5px 10px 0px #000000;
 }
 
 .menu_2{
