@@ -39,6 +39,7 @@ box-shadow: 5px 5px 10px 0px #000000;
 -moz-box-shadow: 5px 5px 10px 0px #000000;
 -o-box-shadow: 5px 5px 10px 0px #000000;
 box-shadow: 5px 5px 10px 0px #000000;
+border-radius: 20px;
 }
 
 .menu_2{
