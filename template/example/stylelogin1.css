@@ -2,10 +2,14 @@ body{
   margin: 0;
   padding: 0;
   font-family: comfortaa;
-  background: url(img/bg1.jpg);
-  background-size: cover;
+  background: #fff;
 }
-
+@media screen and (min-width: 1450px){
+  body{
+    background: url(img/bg1.jpg);
+    background-size: cover;
+  }
+}
 .box{
   position: absolute;
   top: 50%;
@@ -17,6 +21,13 @@ body{
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.5);
   border-radius: 10px;
+}
+
+@media screen and (max-width: 992px){
+  .box{
+    padding: 0px;
+    width: 80%;
+  }
 }
 
 .box h2{
