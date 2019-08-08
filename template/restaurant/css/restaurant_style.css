@@ -80,3 +80,9 @@ footer{
     display: none;
   }
 }
+
+
+.card{
+  position: relative;
+  top: 10vh;
+}
