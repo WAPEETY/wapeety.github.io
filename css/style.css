@@ -1,6 +1,6 @@
 
 .row{
-  padding: 13% 3%;
+  padding: 0% 3%;
 }
 
 nav{
@@ -51,4 +51,13 @@ html{
   position: relative;
   top: 0vh;
   padding: 0% 3%;
+}
+
+.deactivate {
+    filter: grayscale(100%);
+}
+
+.curved{
+  background: #ffffff;
+  color: #000000;
 }
