@@ -9,3 +9,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.tooltipped').tooltip();
 });
+
+$(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+ 
