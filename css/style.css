@@ -59,7 +59,7 @@ html{
 }
 
 .curved{
-  background: #ffffff;
+  background: none;
   color: #000000;
 }
 
@@ -131,4 +131,13 @@ html{
  .materialize-textarea:focus {
    border-bottom: 1px solid #000 !important;
    box-shadow: 0 1px 0 0 #000 !important;
+ }
+
+ #particles-js canvas {
+     display: block;
+     position: fixed;
+     top: 0;
+     left: 0;
+     overflow: hidden;
+     z-index: -10;
  }
