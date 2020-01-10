@@ -82,5 +82,18 @@
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
+
+    <style media="screen">
+    @media screen and (max-width: 499px) {
+      #particles-js canvas {
+          display: block;
+          position: fixed;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          z-index: -100;
+      }
+    }
+    </style>
   </body>
 </html>
