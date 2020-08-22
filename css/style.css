@@ -1,137 +1,81 @@
-
-.row{
-  padding: 0% 3%;
+.nav-wrapper{
+  opacity: 90%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  padding-right: 30px;
 }
 
-nav{
-  position: relative;
+.primary{
+  background-color: #AB47BC;
 }
 
-.spazio{
-  padding: 0 3%;
+.sidenav{
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20;
+}
+
+.main{
+  padding-top: 4em;
+}
+
+.maincard{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+.titleOut{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #AB47BC;
+}
+
+.title{
   font-family: comfortaa;
+  font-weight: 900;
+  font-size: 2.5rem;
 }
 
-h3{
+.icons{
   font-family: comfortaa;
-  text-decoration: none;
+  font-weight: 900;
+  font-size: 2.5rem;
 }
 
-html{
+.icons a{
   text-decoration: none;
-  font-size: 100%;
+  color: #AB47BC;
 }
 
-.testo-card{
+.icons #mail{
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.description{
   font-family: comfortaa;
-  text-decoration: none;
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
 }
 
-@media screen and (min-width: 992px){
-  .ombra {
-    -webkit-transition: -webkit-box-shadow .25s;
-    transition: -webkit-box-shadow .25s;
-    transition: box-shadow .25s;
-    transition: box-shadow .25s, -webkit-box-shadow .25s;
-  }
-
-  .ombra:hover {
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+.description b{
+  font-weight: 900;
+  font-size: 1.4rem;
 }
 
-.parallax-container {
-      height: 34%;
-    }
-
-.row.fix{
-    padding: 13% 3% 0% 3%;
+.description i{
+  font-weight: 100;
+  font-size: 0.8rem;
 }
-.row.ann{
-  position: relative;
-  top: 0vh;
-  padding: 0% 3%;
-}
-
-.deactivate {
-    filter: grayscale(100%);
-}
-
-.curved{
-  background: none;
-  color: #000000;
-}
-
-.svg{
-  margin-bottom: 0;
-}
-
-  h1{
-    font-size: 2.8rem !important;
-  }
-
-  h3{
-    font-size: 1.8rem !important;
-  }
-
-  @media screen and (min-width: 321px){
-    h1{
-      font-size: 3rem !important;
-    }
-    h3{
-      font-size: 2rem !important;
-    }
-}
-
-@media screen and (min-width: 500px){
-  h1{
-    font-size: 5rem !important;
-  }
-  h3{
-    font-size: 3rem !important;
-  }
-
-#padding-dev{
-  padding-top: 20%;
-}
-
-/* label color */
- .input-field label {
-   color: #000 !important;
- }
-
- /* label focus color */
- .input-field input[type=text]:focus + label {
-   color: #000 !important;
- }
- /* label underline focus color */
- .input-field input[type=text]:focus {
-   border-bottom: 1px solid #000 !important;
-   box-shadow: 0 1px 0 0 #000 !important;
- }
-
- /* icon prefix focus color */
- .input-field .prefix.active {
-   color: #000 !important;
- }
-
- /* label focus color */
- .input-field input[type=email]:focus + label {
-   color: #000 !important;
- }
-
- /* label underline focus color */
- .input-field input[type=email]:focus {
-   border-bottom: 1px solid #000 !important;
-   box-shadow: 0 1px 0 0 #000 !important;
- }
-
- /* label underline focus color */
- .materialize-textarea:focus {
-   border-bottom: 1px solid #000 !important;
-   box-shadow: 0 1px 0 0 #000 !important;
- }
 
  #particles-js canvas {
      display: block;

@@ -23,13 +23,13 @@ const particlesJSON = {"particles": {
     }
   },
   "color": { // The color for every node, not the connecting lines.
-    "value": "#000000" // Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
+    "value": "#8E24AA" // Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
   },
   "shape": {
-      "type": "circle", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
+      "type": "polygon", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
       "stroke": { // The border
         "width": 1,
-        "color": "#000000"
+        "color": "#8E24AA"
       },
       "polygon": { // if the shape is a polygon
         "nb_sides": 5
@@ -51,7 +51,7 @@ const particlesJSON = {"particles": {
   "line_linked": {
     "enable": true,
     "distance": 200, // The radius before a line is added, the lower the number the more lines.
-    "color": "#000000",
+    "color": "#8E24AA",
     "opacity": 0.5,
     "width": 2
   },
