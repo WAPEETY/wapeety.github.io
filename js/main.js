@@ -12,6 +12,11 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.fixed-action-btn').floatingActionButton();
+
+    $('#masonry').masonry({
+      itemSelector: '.col',
+      columnWidth: '.col'
+    })
   });
 
 const particlesJSON = {"particles": {

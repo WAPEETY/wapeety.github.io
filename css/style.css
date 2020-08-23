@@ -54,6 +54,11 @@
   color: #AB47BC;
 }
 
+.icons .small{
+  font-size: 1.5rem;
+  padding-right: 15px;
+}
+
 .icons #mail{
   font-family: monospace;
   font-size: 1.5rem;
@@ -75,6 +80,14 @@
 .description i{
   font-weight: 100;
   font-size: 0.8rem;
+}
+
+.code{
+  font-family: monospace;
+}
+
+.code a{
+  color: #AB47BC;
 }
 
  #particles-js canvas {
