@@ -72,6 +72,10 @@
   padding-bottom: 10px;
 }
 
+.description a{
+  color: #AB47BC;
+}
+
 .description b{
   font-weight: 900;
   font-size: 1.4rem;
