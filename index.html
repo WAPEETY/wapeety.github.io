@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="WAPEETY">
     <meta property="og:title" content="WAPEETY">
-    <meta name="description" content="WAPEETY, just another crazy Dev.">
-    <meta name="og:description" content="WAPEETY, just another crazy Dev.">
-    <meta property="og:site_name" content="WAPEETY">
+    <meta name="description" content="just another crazy Dev.">
+    <meta property="og:site_name" content="WAPEETY official website">
     <title>WAPEETY</title>
     <!--Font lato-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
@@ -20,8 +19,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!--Material icons-->
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css">
+    <!--Color picker-->
+    <link rel="stylesheet" href="css/farbtastic.css" type="text/css">
   </head>
-  <body>
+  <body class="">
 
     <div class="navbar-fixed">
   <nav class="transparent z-depth-0">
@@ -70,7 +71,7 @@
     </div>
     
     <div class="row">
-      <div class="col s12 m6 offset-m3"><span class="title titleOut">RECENT PROJECTS:</span></div>
+      <div class="col s12 m6 offset-m3"><span class="title titleOut primary">RECENT PROJECTS:</span></div>
     </div>
     
     <div class="row" id="masonry">
@@ -109,7 +110,7 @@
             </p>
             
             <p class="description">more information here:</p>
-            <div class="valign-wrapper"> <span class="icons"><a href="https://github.com/WAPEETY/wapeety.github.io/releases" target="_blank" rel="noopener noreferrer"><i class="small mdi mdi-git"></i> </a></span>  <span class="code">  beta 0.1.4</span></div>
+            <div class="valign-wrapper"> <span class="icons"><a href="https://github.com/WAPEETY/wapeety.github.io/releases" target="_blank" rel="noopener noreferrer"><i class="small mdi mdi-git"></i> </a></span>  <span class="code">  beta 0.2.1</span></div>
           </div>
         </div>
       </div>
@@ -134,18 +135,38 @@
     </div>
 
     <div class="row">
-      <div class="col s12 m6 offset-m3 center"><span class="title titleOut">THAT'S ALL FOLKS !</span></div>
+      <div class="col s12 m6 offset-m3 center"><span class="title primary titleOut">So you don't like the primary color ?<br><i>... e fattell tu!</i></span></div>
+    </div>
+    
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="card maincard white z-depth-5">
+          <div class="card-content center black-text">
+            <span class="title">Choose a color</span>
+            
+
+            <div class="colorpicker"></div>
+            
+          </div>            
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
 </div>
 
+<div class="fixed-action-btn">
+  <a onclick="toggledark()" id="ico" class="btn-floating btn-large primary">
+    🌚
+  </a>
+</div>
 
     <!--Javascript things-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="js/farbtastic.js"></script>
     <script src="js/main.js"></script>
 
     <style media="screen">

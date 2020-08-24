@@ -34,7 +34,11 @@
 .titleOut{
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #AB47BC;
+}
+
+.title i{
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .title{
@@ -92,6 +96,14 @@
 
 .code a{
   color: #AB47BC;
+}
+
+.btn-floating:hover{
+  background-color: #AB47BC;
+}
+
+.darkbg{
+  background-color: #111;
 }
 
  #particles-js canvas {
