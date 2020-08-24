@@ -39,6 +39,7 @@ $('.colorpicker').farbtastic(function(color) {
   $('.colorpicker').val(color);
   $(".primary").css("background" , color);
   $(".icons a").css("color" , color);
+  $(".description a").css("color" , color);
   Tcolor = color;
 
   const particlesJSON = {"particles": {
