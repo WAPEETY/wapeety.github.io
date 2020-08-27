@@ -16,9 +16,16 @@
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 30px;
-  height: fit-content;
+  height: max-content;
   padding-top: 20px;
   padding-bottom: 20;
+  overflow: auto;
+}
+
+@-moz-document url-prefix() {
+  .sidenav {
+    height: -moz-max-content;
+  }
 }
 
 .main{
