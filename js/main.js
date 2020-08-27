@@ -31,7 +31,34 @@ function toggledark(){
   }
 }
 
+var lang = 0;
 
+function switchLang(){
+  if(lang == 0){
+    lang = 1;
+    document.getElementById("flag").src = "img/ita.min.png";
+    var elementToHide = document.getElementsByClassName('en');
+    var elementToShow = document.getElementsByClassName('it');
+    for(let i=0; i < elementToHide.length; i++){
+      elementToHide[i].classList.add("hide");
+      elementToShow[i].classList.remove("hide");
+    }
+
+    console.log("ITA");
+  }
+  else{
+    lang = 0;
+    document.getElementById("flag").src = "img/eng.min.png";
+    var elementToHide = document.getElementsByClassName('it');
+    var elementToShow = document.getElementsByClassName('en');
+    for(let i=0; i < elementToHide.length; i++){
+      elementToHide[i].classList.add("hide");
+      elementToShow[i].classList.remove("hide");
+    }
+
+    console.log("ENG");
+  }
+}
 
 $('.colorpicker').farbtastic(function(color) {
   console.log('The user has just selected the following color: ' + color);
