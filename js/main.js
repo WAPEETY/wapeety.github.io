@@ -35,6 +35,7 @@ var lang = 0;
 
 function switchLang(){
   if(lang == 0){
+    
     lang = 1;
     document.getElementById("flag").src = "img/ita.min.png";
     var elementToHide = document.getElementsByClassName('en');
