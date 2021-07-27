@@ -1,43 +1,39 @@
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-  if(findGetParameter("lang") == "it"){
-    switchLang();
+var Tcolor = "#AB47BC";
+var background = 0;
+var lang = 0;
+
+function copyToClipboard(element) {
+  if(lang == 0){
+    M.toast({html: 'copied',classes: "primary"})
   }
-  if(findGetParameter("bg") == "dark"){
-    toggledark();
+  else{
+    M.toast({html: 'copiato',classes: "primary"})
   }
+  $(".primary").css("background" , Tcolor);
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
 
-  $('.fixed-action-btn').floatingActionButton();
 
-  $('#masonry').masonry({
-    itemSelector: '.col',
-    columnWidth: '.col'
-  })
-
-  $.farbtastic(".colorpicker").setColor("#AB47BC");
-
-  });
-
-  var Tcolor = "#AB47BC";
-
-  var background = 0;
-
-  function toggledark(){
+function toggledark(){
   if(background == 0){
     console.log("Switched to darkSide");
     background = 1;
     document.body.classList.add("darkbg");
     document.getElementById("ico").innerHTML = "🌞";
+    insertUrlParam("bg","dark")
   }
   else{
     console.log("here's more light so you can burn your shitty eyes")
     background = 0;
     document.body.classList.remove("darkbg");
     document.getElementById("ico").innerHTML = "🌚";
+    removeURLParam(window.location.href,"bg")
   }
 }
-
-var lang = 0;
 
 function switchLang(){
   if(lang == 0){
@@ -50,6 +46,7 @@ function switchLang(){
       elementToHide[i].classList.add("hide");
       elementToShow[i].classList.remove("hide");
     }
+    insertUrlParam("lang","it")
 
     console.log("ITA");
   }
@@ -62,80 +59,11 @@ function switchLang(){
       elementToHide[i].classList.add("hide");
       elementToShow[i].classList.remove("hide");
     }
+    removeURLParam(window.location.href,"lang")
 
     console.log("ENG");
   }
 }
-
-$('.colorpicker').farbtastic(function(color) {
-  console.log('The user has just selected the following color: ' + color);
-  // setting input value
-  $('.colorpicker').val(color);
-  $(".primary").css("background" , color);
-  $(".icons a").css("color" , color);
-  $(".description a").css("color" , color);
-  Tcolor = color;
-
-  const particlesJSON = {"particles": {
-    "number": {
-      "value": 50,
-      "density": {
-        "enable": true,
-        "value_area": 700 // Denser the smaller the number.
-      }
-    },
-    "color": { // The color for every node, not the connecting lines.
-      "value": Tcolor // Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
-    },
-    "shape": {
-        "type": "polygon", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
-        "stroke": { // The border
-          "width": 1,
-          "color": Tcolor
-        },
-        "polygon": { // if the shape is a polygon
-          "nb_sides": 5
-        },
-        "image": { // If the shape is an image
-          "src": "",
-          "width": 100,
-          "height": 100
-        }
-    },
-    "opacity": {
-      "value": 0.7,
-      "random": true
-    },
-    "size": {
-      "value": 10,
-      "random": true
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 200, // The radius before a line is added, the lower the number the more lines.
-      "color": Tcolor,
-      "opacity": 0.5,
-      "width": 2
-    },
-    "move": {
-      "enable": true,
-      "speed": 2,
-      "direction": "top", // Move them off the canvas, either "none", "top", "right", "bottom", "left", "top-right", "bottom-right" et cetera...
-      "random": true,
-      "straight": false, // Whether they'll shift left and right while moving.
-      "out_mode": "out", // What it'll do when it reaches the end of the canvas, either "out" or "bounce".
-      "bounce": false,
-      "attract": { // Make them start to clump together while moving.
-        "enable": true,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  }}
-
-  particlesJS("particles-js", particlesJSON)
-
-});
 
 //retrieve get parameters (absolutely not copied from Stack Overflow LOL)
 function findGetParameter(parameterName) {
@@ -148,3 +76,64 @@ function findGetParameter(parameterName) {
   }
   return result;
 }
+
+function insertUrlParam(key, value) {
+  if (history.pushState) {
+      let searchParams = new URLSearchParams(window.location.search);
+      searchParams.set(key, value);
+      let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + searchParams.toString();
+      window.history.pushState({path: newurl}, '', newurl);
+  }
+}
+
+function removeURLParam(url, parameter) {
+  var urlparts= url.split('?');   
+  if (urlparts.length>=2) {
+
+      var prefix= encodeURIComponent(parameter)+'=';
+      var pars= urlparts[1].split(/[&;]/g);
+
+      //reverse iteration as may be destructive
+      for (var i= pars.length; i-- > 0;) {    
+          //idiom for string.startsWith
+          if (pars[i].lastIndexOf(prefix, 0) !== -1) {  
+              pars.splice(i, 1);
+          }
+      }
+
+      url= urlparts[0] + (pars.length > 0 ? '?' + pars.join('&') : "");
+
+  }
+  window.history.pushState({path: url}, '', url)
+}
+
+function checkColor(color){
+  if(color != null && color.length == 6){
+    regex = new RegExp('^[a-fA-F0-9]+$')
+    return regex.test(color)
+  }
+}
+
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+  if(findGetParameter("lang") == "it"){
+    switchLang();
+  }
+  if(findGetParameter("bg") == "dark"){
+    toggledark();
+  }
+
+  if(checkColor(findGetParameter("color"))){
+    Tcolor = "#" + findGetParameter("color")
+  }
+
+  $('.fixed-action-btn').floatingActionButton();
+
+  $('#masonry').masonry({
+    itemSelector: '.col',
+    columnWidth: '.col'
+  })
+
+  $.farbtastic(".colorpicker").setColor(Tcolor);
+
+  });

@@ -113,11 +113,36 @@
   background-color: #111;
 }
 
- #particles-js canvas {
-     display: block;
-     position: fixed;
-     top: 0;
-     left: 0;
-     overflow: hidden;
-     z-index: -10;
- }
+#particles-js canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.sharetip{
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sharetip > h5{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mtop-30{
+  margin-top: 30 !important;
+}
+
+.toast{
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ciao{
+  background-color: red;
+}
