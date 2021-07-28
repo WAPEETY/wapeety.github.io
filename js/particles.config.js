@@ -1,6 +1,7 @@
 $('.colorpicker').farbtastic(function(color) {
     console.log('The user has just selected the following color: ' + color);
     insertUrlParam("color",color.substring(1))
+    document.getElementById("sharetext").textContent = window.location.href
 
     // setting input value
     $('.colorpicker').val(color);

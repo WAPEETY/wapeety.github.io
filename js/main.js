@@ -25,6 +25,7 @@ function toggledark(){
     document.body.classList.add("darkbg");
     document.getElementById("ico").innerHTML = "🌞";
     insertUrlParam("bg","dark")
+    document.getElementById("sharetext").textContent = window.location.href
   }
   else{
     console.log("here's more light so you can burn your shitty eyes")
@@ -32,6 +33,7 @@ function toggledark(){
     document.body.classList.remove("darkbg");
     document.getElementById("ico").innerHTML = "🌚";
     removeURLParam(window.location.href,"bg")
+    document.getElementById("sharetext").textContent = window.location.href
   }
 }
 
@@ -47,6 +49,7 @@ function switchLang(){
       elementToShow[i].classList.remove("hide");
     }
     insertUrlParam("lang","it")
+    document.getElementById("sharetext").textContent = window.location.href
 
     console.log("ITA");
   }
@@ -60,6 +63,7 @@ function switchLang(){
       elementToShow[i].classList.remove("hide");
     }
     removeURLParam(window.location.href,"lang")
+    document.getElementById("sharetext").textContent = window.location.href
 
     console.log("ENG");
   }
