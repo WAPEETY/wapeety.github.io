@@ -138,8 +138,8 @@ $(document).ready(function(){
     columnWidth: '.col'
   })
 
-  particlesJS("particles-js", particlesJSON)
-
   $.farbtastic(".colorpicker").setColor(Tcolor);
+
+  particlesJS("particles-js", particlesJSON);
 
   });
