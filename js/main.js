@@ -140,6 +140,4 @@ $(document).ready(function(){
 
   $.farbtastic(".colorpicker").setColor(Tcolor);
 
-  particlesJS("particles-js", particlesJSON);
-
   });
