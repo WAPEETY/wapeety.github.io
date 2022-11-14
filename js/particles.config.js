@@ -67,6 +67,7 @@ $('.colorpicker').farbtastic(function(color) {
       }
     }}
   
-    particlesJS("particles-js", particlesJSON)
+    //reload the page
+    location.reload();
   
   });
